@@ -1,0 +1,29 @@
+.btnComponent {
+  max-width: 16rem;
+  background-color: white;
+  border-radius: 6px;
+  text-align: center;
+  color: #ed4c5c;
+  padding: 1.3rem 3.2rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border 0.5s ease-in-out;
+  border: none;
+  /* outline: none; */
+  border: 2px solid transparent;
+  &:hover {
+    border: 2px solid #000;
+  }
+}
+
+.btnComponent-primary {
+  background-color: #fff;
+  color: #ed4c5c;
+}
+
+.btnComponent-secondary {
+  background-color: #ed4c5c;
+  color: #fff;
+}

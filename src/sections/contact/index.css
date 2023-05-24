@@ -1,0 +1,82 @@
+form {
+  position: relative;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  max-width: 111rem;
+  margin: 0 auto;
+  padding: 9rem 0;
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.4rem;
+    .heading {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    & > [placeholder] {
+      margin: 0;
+    }
+    & > * {
+      flex: 0.45;
+
+      width: 100%;
+      margin-bottom: 0;
+    }
+    .input-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      & > * {
+        width: 100%;
+      }
+    }
+  }
+
+  .input-wrapper {
+    & > * {
+      margin-bottom: 0;
+    }
+  }
+  .msg-error {
+    color: red;
+    font-size: 13px;
+  }
+
+  .success-msg {
+    font-size: 30px;
+    opacity: 0;
+    transition: opacity 2s linear;
+  }
+}
+
+.element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #ee3d1b;
+  color: #fff;
+  top: 0;
+  left: 0;
+  animation: fadeOut 3s ease-in-out forwards;
+  font-size: 20px;
+  position: absolute;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -9;
+  }
+}
